@@ -162,9 +162,9 @@ class ChatUIKitMessageListViewMessageItem extends StatelessWidget {
                 } else {
                   if (model.message.hasDeliverAck) {
                     return MessageStatusType.deliver;
-                  } else if (model.message.hasReadAck) {
-                    return MessageStatusType.read;
-                  }
+                  // } else if (model.message.hasReadAck) {
+                  //   return MessageStatusType.read;
+                  // }
                   return MessageStatusType.succeed;
                 }
               }(),
